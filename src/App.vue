@@ -1,10 +1,7 @@
 <template>
   <div id="app">
     <Nav url="./logo.png" />
-    <Header
-      msg="hello from the header comp"
-      meImage="./headshot-trees-300x311.png"
-    />
+    <Header msg="hello from the header comp" meImage="./headshot-trees-300x311.png" />
     <div class="container second-part">
       <h1>Hello!</h1>
     </div>
@@ -13,19 +10,18 @@
 </template>
 
 <script>
-import Header from './components/Header.vue';
-import Nav from './components/Nav.vue';
-import ListComp from './components/ListComp.vue';
-import 'bulma/css/bulma.css';
-// const listOfItems = [{ message: 'Foo' }, { message: 'Bar' }];
+import Header from "./components/Header.vue";
+import Nav from "./components/Nav.vue";
+import ListComp from "./components/ListComp.vue";
+import "bulma/css/bulma.css";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
     Nav,
-    ListComp,
-  },
+    ListComp
+  }
 };
 </script>
 
