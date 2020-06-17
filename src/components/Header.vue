@@ -1,6 +1,6 @@
 <template>
   <section class="header-section columns">
-    <div class="col-md-3 column">
+    <div class="col-md-3 column is-one-third-desktop">
       <img
         class="align-self-start mr-3"
         :src="meImage"
