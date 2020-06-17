@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Nav />
+    <Nav url="./logo.png" />
     <Header msg="hello from the header comp" />
   </div>
 </template>

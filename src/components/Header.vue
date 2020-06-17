@@ -57,7 +57,7 @@
               <img
                 src="../../public/badge-coding-bootcamp-trilogy.png"
                 alt="developer certificate"
-                className="badge-img"
+                class="badge-img"
               />
             </div>
           </div>
