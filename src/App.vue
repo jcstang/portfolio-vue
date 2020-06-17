@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <Nav url="./logo.png" />
-    <Header msg="hello from the header comp" />
+    <Header
+      msg="hello from the header comp"
+      meImage="./headshot-trees-300x311.png"
+    />
   </div>
 </template>
 
