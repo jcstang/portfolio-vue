@@ -26,11 +26,28 @@ export default {
   data: function() {
     return {
       items: [
-        { id: 1, message: "hi" },
-        { id: 2, message: "goodbye" },
-        { id: 3, message: "cool cool cool" },
-        { id: 4, message: "today today" },
-        { id: 5, message: "some stuff and other stuff" }
+        { id: 1, message: "HTML", fontAwesomeIcon: "fab fa-html5 fa-2x" },
+        { id: 2, message: "javaScript", fontAwesomeIcon: "fab fa-js fa-2x" },
+        {
+          id: 3,
+          message: "CSS3",
+          fontAwesomeIcon: "fab fa-css3 fa-2x"
+        },
+        {
+          id: 4,
+          message: "nodeJs",
+          fontAwesomeIcon: "fab fa-node fa-2x"
+        },
+        {
+          id: 5,
+          message: "ReactJs",
+          fontAwesomeIcon: "fab fa-react fa-2x"
+        },
+        {
+          id: 6,
+          message: "Vuejs",
+          fontAwesomeIcon: "fab fa-vuejs fa-2x"
+        }
       ]
     };
   }

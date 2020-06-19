@@ -1,15 +1,18 @@
 <template>
-  <div class="container column">
-    <p>card component</p>
+  <div class="container column card">
+    <i :class="item.fontAwesomeIcon"></i>
+    <p>{{msg}}</p>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    item: Object,
+    msg: String
+  }
+};
 </script>
 
 <style scoped>
-.container {
-  border: 1px solid blue;
-}
 </style>
