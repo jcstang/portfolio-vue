@@ -1,8 +1,6 @@
 <template>
   <div class="container columns">
-    <p>card container</p>
-    <div class="column" v-for="item in items" :key="item.id">{{item.message}}</div>
-    <Card />
+    <Card v-for="item in items" :key="item.id" msg="hi" />
   </div>
 </template>
 
@@ -12,6 +10,9 @@ import Card from "./Card";
 export default {
   components: {
     Card
+  },
+  props: {
+    items: Array
   }
 };
 </script>

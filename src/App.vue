@@ -2,20 +2,17 @@
   <div id="app">
     <Nav url="./logo.png" />
     <Header msg="hello from the header comp" meImage="./headshot-trees-300x311.png" />
-    <div class="container second-part">
+    <!-- <div class="container second-part">
       <h1>Hello!</h1>
-    </div>
-    <ListComp v-bind:items="items" />
-    <Card />
-    <CardsContainer />
+    </div>-->
+    <!-- <ListComp v-bind:items="items" /> -->
+    <CardsContainer v-bind:items="items" />
   </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
 import Nav from "./components/Nav.vue";
-import ListComp from "./components/ListComp.vue";
-import Card from "./components/Card";
 import CardsContainer from "./components/CardsContainer";
 import "bulma/css/bulma.css";
 
@@ -24,8 +21,6 @@ export default {
   components: {
     Header,
     Nav,
-    ListComp,
-    Card,
     CardsContainer
   },
   data: function() {
