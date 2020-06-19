@@ -5,7 +5,9 @@
     <div class="container second-part">
       <h1>Hello!</h1>
     </div>
-    <ListComp />
+    <ListComp v-bind:items="items" />
+    <Card />
+    <CardsContainer />
   </div>
 </template>
 
@@ -13,6 +15,8 @@
 import Header from "./components/Header.vue";
 import Nav from "./components/Nav.vue";
 import ListComp from "./components/ListComp.vue";
+import Card from "./components/Card";
+import CardsContainer from "./components/CardsContainer";
 import "bulma/css/bulma.css";
 
 export default {
@@ -20,7 +24,20 @@ export default {
   components: {
     Header,
     Nav,
-    ListComp
+    ListComp,
+    Card,
+    CardsContainer
+  },
+  data: function() {
+    return {
+      items: [
+        { id: 1, message: "hi" },
+        { id: 2, message: "goodbye" },
+        { id: 3, message: "cool cool cool" },
+        { id: 4, message: "today today" },
+        { id: 5, message: "some stuff and other stuff" }
+      ]
+    };
   }
 };
 </script>
