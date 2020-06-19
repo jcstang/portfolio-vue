@@ -30,7 +30,8 @@ export default {
         { id: 2, message: "goodbye" },
         { id: 3, message: "cool cool cool" },
         { id: 4, message: "today today" },
-        { id: 5, message: "some stuff and other stuff" }
+        { id: 5, message: "some stuff and other stuff" },
+        { id: 6, message: "cool cool stuff a roooo" }
       ]
     };
   }

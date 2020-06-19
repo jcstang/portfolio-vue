@@ -1,15 +1,11 @@
 <template>
   <section class="header-section columns">
     <div class="col-md-3 column is-one-third-desktop">
-      <img
-        class="align-self-start mr-3"
-        :src="meImage"
-        alt="Jacob Stanger portrait"
-      />
+      <img class="align-self-start mr-3" :src="meImage" alt="Jacob Stanger portrait" />
     </div>
     <div class="col-md-9 column">
       <h5 class="title is-2">Jacob Stanger</h5>
-      <h5 class="title is-3">About me</h5>
+      <h5 class="title is-3">About Me</h5>
       <p>
         Full stack web developer with a passion for iOS development. Educated in
         computer science at Weber State University and recently earned a coding
@@ -20,7 +16,9 @@
         to stakeholders.
       </p>
       <hr />
-      <p><strong>Email</strong> JacobcStanger@gmail.com</p>
+      <p>
+        <strong>Email</strong> JacobcStanger@gmail.com
+      </p>
       <div class="row container is-fluid">
         <a
           class="button is-link social-btn"
@@ -28,7 +26,9 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span class="icon"><i class="fab fa-linkedin"></i></span>
+          <span class="icon">
+            <i class="fab fa-linkedin"></i>
+          </span>
           <span>LinkedIn</span>
         </a>
 
@@ -38,7 +38,9 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span class="icon"><i class="fab fa-github"></i></span>
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
           <span>GitHub</span>
         </a>
 
@@ -48,7 +50,9 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span class="icon"><i class="fab fa-twitter"></i></span>
+          <span class="icon">
+            <i class="fab fa-twitter"></i>
+          </span>
           <span>Twitter</span>
         </a>
         <div class="container">
@@ -64,14 +68,14 @@
 </template>
 
 <script>
-import 'bulma/css/bulma.css';
+import "bulma/css/bulma.css";
 
 export default {
-  name: 'Header',
+  name: "Header",
   props: {
     msg: String,
-    meImage: String,
-  },
+    meImage: String
+  }
 };
 </script>
 

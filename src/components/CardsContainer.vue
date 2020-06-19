@@ -1,6 +1,6 @@
 <template>
-  <div class="container columns">
-    <Card v-for="item in items" :key="item.id" msg="hi" />
+  <div class="container-fluid columns">
+    <Card v-for="item in items" :key="item.id" :msg="item.message" :item="item" />
   </div>
 </template>
 
@@ -12,13 +12,14 @@ export default {
     Card
   },
   props: {
-    items: Array
+    items: Array,
+    item: Object
   }
 };
 </script>
 
 <style scoped>
-.container {
-  border: 1px dotted green;
+.columns {
+  margin: 1vw 2.5vw;
 }
 </style>
