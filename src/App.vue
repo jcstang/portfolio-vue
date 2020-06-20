@@ -7,6 +7,7 @@
     </div>-->
     <!-- <ListComp v-bind:items="items" /> -->
     <CardsContainer v-bind:items="items" />
+    <ProjectsContainer />
   </div>
 </template>
 
@@ -14,6 +15,7 @@
 import Header from "./components/Header.vue";
 import Nav from "./components/Nav.vue";
 import CardsContainer from "./components/CardsContainer";
+import ProjectsContainer from "./components/ProjectsContainer";
 import "bulma/css/bulma.css";
 
 export default {
@@ -21,7 +23,8 @@ export default {
   components: {
     Header,
     Nav,
-    CardsContainer
+    CardsContainer,
+    ProjectsContainer
   },
   data: function() {
     return {

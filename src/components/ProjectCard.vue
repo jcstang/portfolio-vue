@@ -2,9 +2,10 @@
   <div
     class="column is-two-fifths-tablet is-two-fifths-desktop is-one-third-widescreen is-one-quarter-fullhd"
   >
+    <!-- CARD START -->
     <div class="card">
       <div class="card-header">
-        <p class="card-header-title">{props.cardDetails.title}</p>
+        <p class="card-header-title">{{ projectTitle }}</p>
       </div>
 
       <div class="card-content">
@@ -46,5 +47,14 @@
         </div>
       </footer>
     </div>
+    <!-- CARD END -->
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    projectTitle: String
+  }
+};
+</script>
